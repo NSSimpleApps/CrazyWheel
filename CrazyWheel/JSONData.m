@@ -28,15 +28,4 @@
     return ([self.ID isEqualToNumber:otherData.ID]) && ([self.title isEqualToString:otherData.title]);
 }
 
-/*+ (NSArray *)arrayForJSONArray:(NSArray *)jsonArray
-{
-    NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithCapacity:jsonArray.count];
-    
-    for (NSDictionary *json in jsonArray) {
-        [mutableArray addObject:[[CrazyData alloc] initWithJSON:json]];
-    }
-    
-    return [mutableArray copy];
-}*/
-
 @end
