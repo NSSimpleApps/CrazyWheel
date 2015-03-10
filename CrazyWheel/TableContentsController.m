@@ -58,36 +58,35 @@
                            NSLog(@"%@", error);
                        } else {
                            
-                           NSArray *newArrayOfData = [NSJSONSerialization arrayWithData:data];
-                           
                            NSMutableIndexSet *indexesForInsert = [NSMutableIndexSet new];
                            NSMutableIndexSet *indexesForReload = [NSMutableIndexSet new];
                            NSMutableIndexSet *indexesForDelete = [NSMutableIndexSet indexSetWithIndexesInRange:NSMakeRange(0, self.currentArrayOfData.count)];
                            
+                           NSArray *newArrayOfData = [NSJSONSerialization arrayWithData:data];
                            [newArrayOfData enumerateObjectsUsingBlock:^(NSDictionary *newDictionary, NSUInteger newIndex, BOOL *stop) {
                                
-                               JSONData *newDataItem = [[JSONData alloc] initWithDictionary:newDictionary];
+                               JSONData *newData = [[JSONData alloc] initWithDictionary:newDictionary];
                                
-                               __block BOOL foundNewDataItemInOldData = NO;
-                               [self.currentArrayOfData enumerateObjectsUsingBlock:^(NSDictionary *oldDictionary, NSUInteger oldIndex, BOOL *innerStop) {
+                               __block BOOL foundNewDataInCurrentData = NO;
+                               [self.currentArrayOfData enumerateObjectsUsingBlock:^(NSDictionary *currentDictionary, NSUInteger currentIndex, BOOL *innerStop) {
                                    
-                                   JSONData *oldDataItem = [[JSONData alloc] initWithDictionary:oldDictionary];
+                                   JSONData *currentData = [[JSONData alloc] initWithDictionary:currentDictionary];
                                    
-                                   foundNewDataItemInOldData = [newDataItem isEqualTo:oldDataItem];
+                                   foundNewDataInCurrentData = [newData isEqualTo:currentData];
                                    
-                                   if (foundNewDataItemInOldData) {
+                                   if (foundNewDataInCurrentData) {
                                        
-                                       [indexesForDelete removeIndex:oldIndex];
+                                       [indexesForDelete removeIndex:currentIndex];
                                        
-                                       if (![newDataItem.text isEqualToString:oldDataItem.text]) {
-                                           [indexesForReload addIndex:oldIndex];
+                                       if (![newData.text isEqualToString:currentData.text]) {
+                                           [indexesForReload addIndex:currentIndex];
                                        }
                                        
                                        *innerStop = YES;
                                    }
                                }];
                                
-                               if (!foundNewDataItemInOldData) {
+                               if (!foundNewDataInCurrentData) {
                                    [indexesForInsert addIndex:newIndex];
                                }
                            }];
