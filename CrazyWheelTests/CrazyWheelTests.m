@@ -2,7 +2,7 @@
 //  CrazyWheelTests.m
 //  CrazyWheelTests
 //
-//  Created by neo on 04.03.15.
+//  Created by NSSimpleApps on 04.03.15.
 //  Copyright (c) 2015 NSSimpleApps. All rights reserved.
 //
 

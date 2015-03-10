@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MasterViewController.h
 //  CrazyWheel
 //
 //  Created by NSSimpleApps on 04.03.15.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface MasterViewController : UITableViewController
 
-@property (strong, nonatomic) UIWindow *window;
-
+- (void)stopUpdating;
 
 @end
-
