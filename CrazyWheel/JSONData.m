@@ -25,7 +25,7 @@
 
 - (BOOL)isEqualTo:(JSONData*)otherData {
     
-    return (self.ID == otherData.ID) && ([self.title isEqualToString:otherData.title]);
+    return ([self.ID isEqualToNumber:otherData.ID]) && ([self.title isEqualToString:otherData.title]);
 }
 
 /*+ (NSArray *)arrayForJSONArray:(NSArray *)jsonArray
