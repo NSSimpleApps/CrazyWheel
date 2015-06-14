@@ -10,8 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
-@property (copy, nonatomic) NSString *title;
-
 @property (copy, nonatomic) NSString *text;
 
 @end

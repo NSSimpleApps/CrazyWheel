@@ -93,7 +93,7 @@
                            
                            self.currentArrayOfData = [newArrayOfData copy];
                            
-                           dispatch_async(dispatch_get_main_queue(), ^{
+                           dispatch_sync(dispatch_get_main_queue(), ^{
                                
                                [self.delegate controllerWillChangeContent];
                                [self.delegate changeContentWithIndexesForDelete:indexesForDelete
@@ -109,6 +109,7 @@
 - (void)stopUpdating {
     
     [self.timer invalidate];
+    self.timer = nil;
 }
 
 - (JSONData*)JSONDataAtIndex:(NSInteger)index {
@@ -123,4 +124,8 @@
     return [self.currentArrayOfData count];
 }
 
+- (void)dealloc {
+    
+    [self stopUpdating];
+}
 @end

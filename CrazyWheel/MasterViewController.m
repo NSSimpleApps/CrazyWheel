@@ -124,11 +124,11 @@ static const NSTimeInterval kTimeInterval = 5;
     
     if ([segue.identifier isEqualToString:@"detailSegue"]) {
         
-        NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:sender];
         
         JSONData *data = [self.tableContentsController JSONDataAtIndex:selectedIndexPath.row];
         
-        DetailViewController *detailViewController = [segue destinationViewController];
+        DetailViewController *detailViewController = segue.destinationViewController;
         detailViewController.title = data.title;
         detailViewController.text = data.text;
     }

@@ -19,9 +19,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    self.navigationController.title = self.title;
-    
+        
     self.textView.text = self.text;
 }
 
