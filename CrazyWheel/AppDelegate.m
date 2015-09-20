@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MasterViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,13 +26,6 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    
-    if ([navigationController.visibleViewController isKindOfClass:[MasterViewController class]]) {
-        
-        MasterViewController* masterViewController = (MasterViewController*)navigationController.visibleViewController;
-        [masterViewController stopUpdating];
-    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -46,13 +38,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    
-    if ([navigationController.visibleViewController isKindOfClass:[MasterViewController class]]) {
-        
-        MasterViewController* masterViewController = (MasterViewController*)navigationController.visibleViewController;
-        [masterViewController stopUpdating];
-    }
 }
 
 @end

@@ -27,6 +27,18 @@ static const NSTimeInterval kTimeInterval = 5;
     
     self.tableContentsController = [[TableContentsController alloc] init];
     self.tableContentsController.delegate = self;
+    
+    [self startUpdating];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(startUpdating)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(stopUpdating)
+                                                 name:UIApplicationDidEnterBackgroundNotification
+                                               object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,9 +46,7 @@ static const NSTimeInterval kTimeInterval = 5;
     [super didReceiveMemoryWarning];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
+- (void)startUpdating {
     
     [self.tableContentsController startUpdatingWithTimeInterval:kTimeInterval URL:[NSURL URLWithString:@"http://crazy-dev.wheely.com"]];
 }
@@ -46,11 +56,15 @@ static const NSTimeInterval kTimeInterval = 5;
     [self.tableContentsController stopUpdating];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)dealloc {
     
-    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIApplicationDidBecomeActiveNotification
+                                                  object:nil];
     
-    [self stopUpdating];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIApplicationDidEnterBackgroundNotification
+                                                  object:nil];
 }
 
 #pragma mark - Table view data source
@@ -122,7 +136,7 @@ static const NSTimeInterval kTimeInterval = 5;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+    if ([segue.identifier isEqualToString:@"DetailSegue"]) {
         
         NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:sender];
         
@@ -133,6 +147,5 @@ static const NSTimeInterval kTimeInterval = 5;
         detailViewController.text = data.text;
     }
 }
-
 
 @end

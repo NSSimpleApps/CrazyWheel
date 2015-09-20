@@ -1,14 +1,14 @@
 //
-//  NSJSONSerialization+NSArrayWithData.m
+//  NSJSONSerialization+ArrayWithData.m
 //  CrazyWheel
 //
-//  Created by NSSimpleApps on 09.03.15.
-//  Copyright (c) 2015 NSSimpleApps. All rights reserved.
+//  Created by NSSimpleApps on 20.09.15.
+//  Copyright © 2015 NSSimpleApps. All rights reserved.
 //
 
-#import "NSJSONSerialization+NSArrayWithData.h"
+#import "NSJSONSerialization+ArrayWithData.h"
 
-@implementation NSJSONSerialization (NSArrayWithData)
+@implementation NSJSONSerialization (ArrayWithData)
 
 + (NSArray*)arrayWithData:(NSData*)data {
     
@@ -16,7 +16,6 @@
         
         return nil;
     }
-    
     NSError *error = nil;
     
     NSArray *JSONArray = [NSJSONSerialization JSONObjectWithData:data
@@ -27,7 +26,6 @@
         
         return nil;
     }
-    
     return JSONArray;
 }
 

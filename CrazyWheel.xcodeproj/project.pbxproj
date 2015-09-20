@@ -8,33 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B50307B71AADA17200E4E9CD /* JSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B50307B61AADA17200E4E9CD /* JSONData.m */; };
-		B50307BA1AADEF4D00E4E9CD /* NSJSONSerialization+NSArrayWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = B50307B91AADEF4D00E4E9CD /* NSJSONSerialization+NSArrayWithData.m */; };
+		B5A81E821BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A81E811BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m */; settings = {ASSET_TAGS = (); }; };
 		B5CBCFCD1AA74F62002AA848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFCC1AA74F62002AA848 /* main.m */; };
 		B5CBCFD01AA74F62002AA848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFCF1AA74F62002AA848 /* AppDelegate.m */; };
 		B5CBCFD31AA74F62002AA848 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFD21AA74F62002AA848 /* DetailViewController.m */; };
 		B5CBCFD61AA74F62002AA848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CBCFD41AA74F62002AA848 /* Main.storyboard */; };
 		B5CBCFD81AA74F62002AA848 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CBCFD71AA74F62002AA848 /* Images.xcassets */; };
 		B5CBCFDB1AA74F62002AA848 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5CBCFD91AA74F62002AA848 /* LaunchScreen.xib */; };
-		B5CBCFE71AA74F62002AA848 /* CrazyWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFE61AA74F62002AA848 /* CrazyWheelTests.m */; };
 		B5CBCFF21AA7501D002AA848 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFF11AA7501D002AA848 /* MasterViewController.m */; };
 		B5CBCFF51AA750E6002AA848 /* TableContentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFF41AA750E6002AA848 /* TableContentsController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B5CBCFE11AA74F62002AA848 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5CBCFBF1AA74F62002AA848 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5CBCFC61AA74F62002AA848;
-			remoteInfo = CrazyWheel;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		B50307B51AADA17200E4E9CD /* JSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONData.h; sourceTree = "<group>"; };
 		B50307B61AADA17200E4E9CD /* JSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONData.m; sourceTree = "<group>"; };
-		B50307B81AADEF4D00E4E9CD /* NSJSONSerialization+NSArrayWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSJSONSerialization+NSArrayWithData.h"; path = "../NSJSONSerialization+NSArrayWithData.h"; sourceTree = "<group>"; };
-		B50307B91AADEF4D00E4E9CD /* NSJSONSerialization+NSArrayWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSJSONSerialization+NSArrayWithData.m"; path = "../NSJSONSerialization+NSArrayWithData.m"; sourceTree = "<group>"; };
+		B5A81E801BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+ArrayWithData.h"; sourceTree = "<group>"; };
+		B5A81E811BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+ArrayWithData.m"; sourceTree = "<group>"; };
 		B5CBCFC71AA74F62002AA848 /* CrazyWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CBCFCB1AA74F62002AA848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CBCFCC1AA74F62002AA848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,9 +34,6 @@
 		B5CBCFD51AA74F62002AA848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CBCFD71AA74F62002AA848 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5CBCFDA1AA74F62002AA848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B5CBCFE01AA74F62002AA848 /* CrazyWheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyWheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5CBCFE51AA74F62002AA848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5CBCFE61AA74F62002AA848 /* CrazyWheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyWheelTests.m; sourceTree = "<group>"; };
 		B5CBCFF01AA7501D002AA848 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		B5CBCFF11AA7501D002AA848 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		B5CBCFF31AA750E6002AA848 /* TableContentsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableContentsController.h; sourceTree = "<group>"; };
@@ -62,30 +48,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CBCFDD1AA74F62002AA848 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B575B08D1AAF57AE009938F4 /* CustomJSONSerializer */ = {
-			isa = PBXGroup;
-			children = (
-				B50307B81AADEF4D00E4E9CD /* NSJSONSerialization+NSArrayWithData.h */,
-				B50307B91AADEF4D00E4E9CD /* NSJSONSerialization+NSArrayWithData.m */,
-			);
-			name = CustomJSONSerializer;
-			sourceTree = "<group>";
-		};
 		B5CBCFBE1AA74F62002AA848 = {
 			isa = PBXGroup;
 			children = (
 				B5CBCFC91AA74F62002AA848 /* CrazyWheel */,
-				B5CBCFE31AA74F62002AA848 /* CrazyWheelTests */,
 				B5CBCFC81AA74F62002AA848 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				B5CBCFC71AA74F62002AA848 /* CrazyWheel.app */,
-				B5CBCFE01AA74F62002AA848 /* CrazyWheelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +70,8 @@
 		B5CBCFC91AA74F62002AA848 /* CrazyWheel */ = {
 			isa = PBXGroup;
 			children = (
-				B575B08D1AAF57AE009938F4 /* CustomJSONSerializer */,
+				B5A81E801BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.h */,
+				B5A81E811BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m */,
 				B5CBCFCE1AA74F62002AA848 /* AppDelegate.h */,
 				B5CBCFCF1AA74F62002AA848 /* AppDelegate.m */,
 				B50307B51AADA17200E4E9CD /* JSONData.h */,
@@ -130,23 +99,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B5CBCFE31AA74F62002AA848 /* CrazyWheelTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5CBCFE61AA74F62002AA848 /* CrazyWheelTests.m */,
-				B5CBCFE41AA74F62002AA848 /* Supporting Files */,
-			);
-			path = CrazyWheelTests;
-			sourceTree = "<group>";
-		};
-		B5CBCFE41AA74F62002AA848 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5CBCFE51AA74F62002AA848 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,39 +119,17 @@
 			productReference = B5CBCFC71AA74F62002AA848 /* CrazyWheel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5CBCFDF1AA74F62002AA848 /* CrazyWheelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5CBCFED1AA74F62002AA848 /* Build configuration list for PBXNativeTarget "CrazyWheelTests" */;
-			buildPhases = (
-				B5CBCFDC1AA74F62002AA848 /* Sources */,
-				B5CBCFDD1AA74F62002AA848 /* Frameworks */,
-				B5CBCFDE1AA74F62002AA848 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5CBCFE21AA74F62002AA848 /* PBXTargetDependency */,
-			);
-			name = CrazyWheelTests;
-			productName = CrazyWheelTests;
-			productReference = B5CBCFE01AA74F62002AA848 /* CrazyWheelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B5CBCFBF1AA74F62002AA848 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = NSSimpleApps;
 				TargetAttributes = {
 					B5CBCFC61AA74F62002AA848 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					B5CBCFDF1AA74F62002AA848 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = B5CBCFC61AA74F62002AA848;
 					};
 				};
 			};
@@ -217,7 +147,6 @@
 			projectRoot = "";
 			targets = (
 				B5CBCFC61AA74F62002AA848 /* CrazyWheel */,
-				B5CBCFDF1AA74F62002AA848 /* CrazyWheelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,13 +162,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CBCFDE1AA74F62002AA848 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,9 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A81E821BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m in Sources */,
 				B5CBCFF21AA7501D002AA848 /* MasterViewController.m in Sources */,
 				B5CBCFD31AA74F62002AA848 /* DetailViewController.m in Sources */,
-				B50307BA1AADEF4D00E4E9CD /* NSJSONSerialization+NSArrayWithData.m in Sources */,
 				B5CBCFD01AA74F62002AA848 /* AppDelegate.m in Sources */,
 				B50307B71AADA17200E4E9CD /* JSONData.m in Sources */,
 				B5CBCFF51AA750E6002AA848 /* TableContentsController.m in Sources */,
@@ -257,23 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CBCFDC1AA74F62002AA848 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5CBCFE71AA74F62002AA848 /* CrazyWheelTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5CBCFE21AA74F62002AA848 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5CBCFC61AA74F62002AA848 /* CrazyWheel */;
-			targetProxy = B5CBCFE11AA74F62002AA848 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5CBCFD41AA74F62002AA848 /* Main.storyboard */ = {
@@ -315,6 +221,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -329,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -365,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,8 +285,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CrazyWheel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -389,43 +297,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CrazyWheel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B5CBCFEE1AA74F62002AA848 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CrazyWheelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrazyWheel.app/CrazyWheel";
-			};
-			name = Debug;
-		};
-		B5CBCFEF1AA74F62002AA848 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CrazyWheelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrazyWheel.app/CrazyWheel";
 			};
 			name = Release;
 		};
@@ -446,15 +321,6 @@
 			buildConfigurations = (
 				B5CBCFEB1AA74F62002AA848 /* Debug */,
 				B5CBCFEC1AA74F62002AA848 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5CBCFED1AA74F62002AA848 /* Build configuration list for PBXNativeTarget "CrazyWheelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5CBCFEE1AA74F62002AA848 /* Debug */,
-				B5CBCFEF1AA74F62002AA848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

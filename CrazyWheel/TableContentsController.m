@@ -7,7 +7,7 @@
 //
 
 #import "TableContentsController.h"
-#import "NSJSONSerialization+NSArrayWithData.h"
+#import "NSJSONSerialization+ArrayWithData.h"
 #import "JSONData.h"
 
 @interface TableContentsController ()
@@ -42,15 +42,15 @@
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval
                                                   target:self
-                                                selector:@selector(pullDataFromURL)
+                                                selector:@selector(pullDataFromURL:)
                                                 userInfo:@{@"URL": URL}
                                                  repeats:YES];
 }
 
-- (void)pullDataFromURL {
+- (void)pullDataFromURL:(NSTimer *)timer {
     
     NSURLSessionDataTask *URLSessionDataTask =
-    [self.URLSession dataTaskWithURL:[self.timer.userInfo valueForKey:@"URL"]
+    [self.URLSession dataTaskWithURL:[timer.userInfo valueForKey:@"URL"]
                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                    
                        if (error) {
