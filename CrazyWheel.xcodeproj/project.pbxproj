@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B50307B71AADA17200E4E9CD /* JSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B50307B61AADA17200E4E9CD /* JSONData.m */; };
-		B5A81E821BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A81E811BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m */; settings = {ASSET_TAGS = (); }; };
+		B5A81E821BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A81E811BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m */; };
 		B5CBCFCD1AA74F62002AA848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFCC1AA74F62002AA848 /* main.m */; };
 		B5CBCFD01AA74F62002AA848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFCF1AA74F62002AA848 /* AppDelegate.m */; };
 		B5CBCFD31AA74F62002AA848 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CBCFD21AA74F62002AA848 /* DetailViewController.m */; };
@@ -22,6 +22,7 @@
 /* Begin PBXFileReference section */
 		B50307B51AADA17200E4E9CD /* JSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONData.h; sourceTree = "<group>"; };
 		B50307B61AADA17200E4E9CD /* JSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONData.m; sourceTree = "<group>"; };
+		B5986A5E1CA2D6EC00AE6CBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B5A81E801BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+ArrayWithData.h"; sourceTree = "<group>"; };
 		B5A81E811BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+ArrayWithData.m"; sourceTree = "<group>"; };
 		B5CBCFC71AA74F62002AA848 /* CrazyWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +71,7 @@
 		B5CBCFC91AA74F62002AA848 /* CrazyWheel */ = {
 			isa = PBXGroup;
 			children = (
+				B5986A5E1CA2D6EC00AE6CBD /* README.md */,
 				B5A81E801BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.h */,
 				B5A81E811BAE8C26002B28C8 /* NSJSONSerialization+ArrayWithData.m */,
 				B5CBCFCE1AA74F62002AA848 /* AppDelegate.h */,
