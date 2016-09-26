@@ -33,6 +33,6 @@
 
 - (JSONData*)JSONDataAtIndex:(NSInteger)index;
 
-- (NSInteger)count;
+@property (NS_NONATOMIC_IOSONLY, readonly) NSInteger count;
 
 @end

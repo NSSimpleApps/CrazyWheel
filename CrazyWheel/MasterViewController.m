@@ -41,11 +41,6 @@ static const NSTimeInterval kTimeInterval = 5;
                                                object:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    
-    [super didReceiveMemoryWarning];
-}
-
 - (void)startUpdating {
     
     [self.tableContentsController startUpdatingWithTimeInterval:kTimeInterval URL:[NSURL URLWithString:@"http://crazy-dev.wheely.com"]];
@@ -86,7 +81,7 @@ static const NSTimeInterval kTimeInterval = 5;
     JSONData *data = [self.tableContentsController JSONDataAtIndex:indexPath.row];
     
     cell.textLabel.text = data.title;
-    cell.detailTextLabel.text = [data.ID stringValue];
+    cell.detailTextLabel.text = (data.ID).stringValue;
     
     return cell;
 }

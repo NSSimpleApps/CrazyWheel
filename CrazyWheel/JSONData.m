@@ -10,6 +10,11 @@
 
 @implementation JSONData
 
+- (instancetype)init {
+    
+    return [self initWithDictionary:@{}];
+}
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super init];

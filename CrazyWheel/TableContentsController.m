@@ -28,7 +28,7 @@
         
         NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
         sessionConfig.allowsCellularAccess = NO;
-        [sessionConfig setHTTPAdditionalHeaders:@{@"Accept": @"application/json"}];
+        sessionConfig.HTTPAdditionalHeaders = @{@"Accept": @"application/json"};
         sessionConfig.timeoutIntervalForRequest = 30.0;
         sessionConfig.timeoutIntervalForResource = 60.0;
         sessionConfig.HTTPMaximumConnectionsPerHost = 1;
@@ -40,6 +40,8 @@
 
 - (void)startUpdatingWithTimeInterval:(NSTimeInterval)timeInterval URL:(NSURL*)URL {
     
+    [self.timer invalidate];
+    
     self.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval
                                                   target:self
                                                 selector:@selector(pullDataFromURL:)
@@ -50,12 +52,13 @@
 - (void)pullDataFromURL:(NSTimer *)timer {
     
     NSURLSessionDataTask *URLSessionDataTask =
-    [self.URLSession dataTaskWithURL:[timer.userInfo valueForKey:@"URL"]
+    [self.URLSession dataTaskWithURL:timer.userInfo[@"URL"]
                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                    
                        if (error) {
                            
                            NSLog(@"%@", error);
+                           
                        } else {
                            
                            NSMutableIndexSet *indexesForInsert = [NSMutableIndexSet new];
@@ -121,7 +124,7 @@
 
 - (NSInteger)count {
     
-    return [self.currentArrayOfData count];
+    return (self.currentArrayOfData).count;
 }
 
 - (void)dealloc {

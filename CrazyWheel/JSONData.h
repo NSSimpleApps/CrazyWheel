@@ -14,7 +14,7 @@
 @property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic) NSString *text;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary NS_DESIGNATED_INITIALIZER;
 
 - (BOOL)isEqualTo:(JSONData*)otherData;
 
